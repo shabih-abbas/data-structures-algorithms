@@ -28,23 +28,22 @@ if __name__ == '__main__':
     # -----------------------------------
     # STRESS TEST WITH RUNTIME COMPARISON
     # -----------------------------------
-    # while(True):
-    #     randnums=[]
-    #     n= random.randint(2,10**4)
-    #     print(f'list len: {n}')
-    #     for i in range(n):
-    #         randnums.append(random.randint(1,10**6))
-    #     stime= time.time()
-    #     max1=max_pairwise_product_fast_sort(randnums)
-    #     time1=time.time()-stime
-    #     stime= time.time()
-    #     max2=max_pairwise_product_fast(randnums)
-    #     time2=time.time()-stime
-        
-    #     if(max1!=max2):
-    #         print(f'function 1: {max1}, function 2: {max2}')
-    #         break
-    #     print(f'OK- {'function 1' if time1<time2 else 'function 2'} is faster')
+    while(True):
+        randnums=[]
+        n= random.randint(2,10**4)
+        print(f'list len: {n}')
+        for i in range(n):
+            randnums.append(random.randint(1,10**6))
+        stime= time.time()
+        max1=max_pairwise_product_fast_sort(randnums)
+        time1=time.time()-stime
+        stime= time.time()
+        max2=max_pairwise_product_fast(randnums)
+        time2=time.time()-stime        
+        if(max1!=max2):
+            print(f'function 1: {max1}, function 2: {max2}')
+            break
+        print(f'OK- {'function 1' if time1<time2 else 'function 2'} is faster')
     # ---------------------------------------------------------------------------
     # RUNTIME COMPARISON WITH TIMEIT
     # ---------------------------------------------------------------------------
@@ -53,15 +52,15 @@ if __name__ == '__main__':
     # ---------------------------------------------------------------------------
     # MAIN
     # ---------------------------------------------------------------------------
-    _ = int(input())
-    input_numbers = list(map(int, input().split()))
-    print(max_pairwise_product_fast(input_numbers))
+    # _ = int(input())
+    # input_numbers = list(map(int, input().split()))
+    # print(max_pairwise_product_fast(input_numbers))
     
     
     # NOTES:
 
-    # Sorting (max_pairwise_product_fast_sort) works faster than finding max pair (max_pairwise_product_fast) 
-    # except for a few occasions (usually for small lists). Sorting (Timsort) takes between O(n) to O(n log n) operations
+    # Sorting (max_pairwise_product_fast_sort) performs comparably to finding max pair (max_pairwise_product_fast) 
+    # for lists of large lengths (10^3-10^6) and faster for smaller list. Sorting (Timsort) takes between O(n) to O(n log n) operations
     # depending upon the arrangement of the input list while finding max pair requires two complete traversals of the list 
     # invariably i.e. O(2 n). None the less linear time complexity should in theory perform better than logrithmic time complexity,
     # the contradiction in results may be attributed to the optimizations applied in sort().
