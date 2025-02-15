@@ -1,0 +1,19 @@
+
+
+=== 2025-02-15 07:39:56 ===
+Command Args: {'file': '../fib-nums-and-gcd/fibonacci/fibonacci.py', 'func': 'fibonacci_number', 'lower': 0, 'upper': 35.0, 'count': 1, 'reps': 3, 'type': 'int'}
+Avg. Runtime: 0.000008 sec
+Min Runtime: 0.000001 sec
+Max Runtime: 0.000020 sec
+Lower Bound Runtime: 0.000000 sec (Inputs: [0])
+Upper Bound Runtime: 1.211699 sec (Inputs: [35])
+==================================================
+
+=== 2025-02-15 07:40:20 ===
+Command Args: {'file': '../fib-nums-and-gcd/fibonacci/fibonacci.py', 'func': 'fibonacci_number_fast', 'lower': 0, 'upper': 45.0, 'count': 1, 'reps': 10, 'type': 'int'}
+Avg. Runtime: 0.000004 sec
+Min Runtime: 0.000002 sec
+Max Runtime: 0.000007 sec
+Lower Bound Runtime: 0.000001 sec (Inputs: [0])
+Upper Bound Runtime: 0.000005 sec (Inputs: [45])
+==================================================

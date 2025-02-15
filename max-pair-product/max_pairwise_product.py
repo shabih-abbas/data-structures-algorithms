@@ -28,22 +28,22 @@ if __name__ == '__main__':
     # -----------------------------------
     # STRESS TEST WITH RUNTIME COMPARISON
     # -----------------------------------
-    while(True):
-        randnums=[]
-        n= random.randint(2,10**4)
-        print(f'list len: {n}')
-        for i in range(n):
-            randnums.append(random.randint(1,10**6))
-        stime= time.time()
-        max1=max_pairwise_product_fast_sort(randnums)
-        time1=time.time()-stime
-        stime= time.time()
-        max2=max_pairwise_product_fast(randnums)
-        time2=time.time()-stime        
-        if(max1!=max2):
-            print(f'function 1: {max1}, function 2: {max2}')
-            break
-        print(f'OK- {'function 1' if time1<time2 else 'function 2'} is faster')
+    # while(True):
+    #     randnums=[]
+    #     n= random.randint(2,10**4)
+    #     print(f'list len: {n}')
+    #     for i in range(n):
+    #         randnums.append(random.randint(1,10**6))
+    #     stime= time.time()
+    #     max1=max_pairwise_product_fast_sort(randnums)
+    #     time1=time.time()-stime
+    #     stime= time.time()
+    #     max2=max_pairwise_product_fast(randnums)
+    #     time2=time.time()-stime        
+    #     if(max1!=max2):
+    #         print(f'function 1: {max1}, function 2: {max2}')
+    #         break
+    #     print(f'OK- {'function 1' if time1<time2 else 'function 2'} is faster')
     # ---------------------------------------------------------------------------
     # RUNTIME COMPARISON WITH TIMEIT
     # ---------------------------------------------------------------------------
@@ -52,9 +52,9 @@ if __name__ == '__main__':
     # ---------------------------------------------------------------------------
     # MAIN
     # ---------------------------------------------------------------------------
-    # _ = int(input())
-    # input_numbers = list(map(int, input().split()))
-    # print(max_pairwise_product_fast(input_numbers))
+    _ = int(input())
+    input_numbers = list(map(int, input().split()))
+    print(max_pairwise_product_fast(input_numbers))
     
     
     # NOTES:
