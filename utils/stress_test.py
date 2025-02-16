@@ -1,21 +1,7 @@
 import argparse
-import importlib.util
-import random
+from import_module import *
+from input_generator import *
 import time
-
-def import_function(file_path, func_name):
-    """Dynamically import a function from a given Python file."""
-    spec = importlib.util.spec_from_file_location("module.name", file_path)
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return getattr(module, func_name)
-
-def generate_inputs(lower, upper, count, data_type):
-    """Generate a list of random inputs based on type and bounds."""
-    if data_type == "int":
-        return [random.randint(int(lower), int(upper)) for _ in range(count)]
-    else:
-        return [random.uniform(lower, upper) for _ in range(count)]
 
 def stress_test(func1, func2, max_time, lower, upper, count, data_type):
     """Continuously test two functions with random inputs until a mismatch or max_time is reached."""

@@ -1,8 +1,8 @@
 import sys
-import importlib
+from import_module import *
+from input_generator import *
 import os
 import argparse
-import random
 import time
 from datetime import datetime
 
@@ -18,34 +18,23 @@ parser.add_argument("--type", choices=["int", "float"], default="int", help="Dat
 
 # Parse command-line arguments
 args = parser.parse_args()
-
-# Extract directory and module name
-file_path = os.path.abspath(args.file)
-dir_path = os.path.dirname(file_path)  # Directory of the file
-file_name = os.path.basename(file_path).replace(".py", "")  # Extract filename (e.g., "math_operations")
-
+dir_path= os.path.dirname(args.file)
 # Path for log file in the same directory as the function file
-log_file_path = os.path.join(dir_path, f"{file_name}_runtime_stats.txt")
+log_file_path = os.path.join(dir_path, f"{args.func}_runtime_stats.txt")
 
 # Add directory to sys.path
 sys.path.append(dir_path)
 
 try:
-    # Import the module dynamically
-    module = importlib.import_module(file_name)
-
+    
     # Get the function from the module
-    function = getattr(module, args.func)
+    function = import_function(args.file, args.func)
 
     runtimes = []
 
     # ✅ Regular Randomized Tests
     for _ in range(args.reps):
-        if args.type == "int":
-            inputs = [random.randint(int(args.lower), int(args.upper)) for _ in range(args.count)]
-        else:
-            inputs = [random.uniform(args.lower, args.upper) for _ in range(args.count)]
-        
+        inputs= generate_inputs(args.lower, args.upper, args.count, args.type)
         # Measure execution time
         start_time = time.time()
         result = function(*inputs)
@@ -80,7 +69,10 @@ try:
     # Log results
     with open(log_file_path, "a") as log_file:
         log_file.write(f"\n=== {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ===\n")
-        log_file.write(f"Command Args: {vars(args)}\n")
+        log_file.write(f"function: {args.func}\n")
+        log_file.write(f"input lower-bound: {args.lower}\n")
+        log_file.write(f"input upper-bound: {args.upper}\n")
+        log_file.write(f"No. of tests: {args.reps}\n")
         log_file.write(f"Avg. Runtime: {avg_runtime:.6f} sec\n")
         log_file.write(f"Min Runtime: {min_runtime:.6f} sec\n")
         log_file.write(f"Max Runtime: {max_runtime:.6f} sec\n")
