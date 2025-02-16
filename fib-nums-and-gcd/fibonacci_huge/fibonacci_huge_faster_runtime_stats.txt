@@ -1,0 +1,30 @@
+
+=== 2025-02-16 16:27:53 ===
+function: fibonacci_huge_faster
+input lower-bound: 2.0
+input upper-bound: 99999.0
+input type: int
+length of input: 2
+
+No. of tests: 50
+Avg. Runtime: 0.821113 sec
+Min Runtime: 0.000297 sec
+Max Runtime: 9.690392 sec
+Lower Bound Runtime: 0.000004 sec 
+Upper Bound Runtime: 0.002834 sec 
+==================================================
+
+=== 2025-02-16 16:53:45 ===
+function: fibonacci_huge_faster
+input lower-bound: 2.0
+input upper-bound: 1000.0
+input type: int
+length of input: 2
+
+No. of tests: 50
+Avg. Runtime: 0.000238 sec
+Min Runtime: 0.000004 sec
+Max Runtime: 0.000896 sec
+Lower Bound Runtime: 0.000001 sec 
+Upper Bound Runtime: 0.000924 sec 
+==================================================
