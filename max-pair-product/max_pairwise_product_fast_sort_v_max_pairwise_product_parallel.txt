@@ -1,0 +1,18 @@
+
+max_pairwise_product_fast_sort vs max_pairwise_product_parallel
+
+lower input bound: 0
+upper input bound: 10000.0
+no. of tests: 100
+
+max_pairwise_product_fast_sort avg: 0.007974 sec
+max_pairwise_product_parallel avg: 0.004162 sec
+
+max_pairwise_product_fast_sort lower bound input: 0.000953 sec
+max_pairwise_product_parallel lower bound input: 0.006478 sec
+
+max_pairwise_product_fast_sort upper bound input: 0.000679 sec
+max_pairwise_product_parallel upper bound input: 0.006895 sec
+
+max_pairwise_product_fast_sort was faster 0 times out of 100
+max_pairwise_product_parallel was faster 100 times out of 100

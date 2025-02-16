@@ -1,0 +1,18 @@
+
+fibonacci_number vs fibonacci_number_fast
+
+lower input bound: 0
+upper input bound: 35.0
+no. of tests: 30
+
+fibonacci_number avg: 0.136563 sec
+fibonacci_number_fast avg: 0.000007 sec
+
+fibonacci_number lower bound input: 0.000000 sec
+fibonacci_number_fast lower bound input: 0.000007 sec
+
+fibonacci_number upper bound input: 1.303573 sec
+fibonacci_number_fast upper bound input: 0.000013 sec
+
+fibonacci_number was faster 3 times out of 30
+fibonacci_number_fast was faster 27 times out of 30

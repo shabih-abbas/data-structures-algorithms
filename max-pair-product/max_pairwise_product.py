@@ -23,7 +23,16 @@ def max_pairwise_product_fast(numbers):
     for i in range(len(numbers)):
         max2_i= i if i!=max1_i and numbers[i]>numbers[max2_i] else max2_i
     return numbers[max1_i]*numbers[max2_i]
-
+def max_pairwise_product_parallel(numbers):
+    if len(numbers)<2 : return 0
+    max1_i=0
+    max2_i=1
+    for i in range(len(numbers)):
+        if numbers[max1_i]<numbers[i]: 
+            max2_i, max1_i=max1_i, i
+        elif i!=max1_i and numbers[max2_i]<numbers[i]:
+            max2_i= i
+    return numbers[max1_i]*numbers[max2_i]
 if __name__ == '__main__':
     # -----------------------------------
     # STRESS TEST WITH RUNTIME COMPARISON
@@ -54,16 +63,9 @@ if __name__ == '__main__':
     # ---------------------------------------------------------------------------
     _ = int(input())
     input_numbers = list(map(int, input().split()))
-    print(max_pairwise_product_fast(input_numbers))
+    print(max_pairwise_product_parallel(input_numbers))
     
     
-    # NOTES:
-
-    # Sorting (max_pairwise_product_fast_sort) performs comparably to finding max pair (max_pairwise_product_fast) 
-    # for lists of large lengths (10^3-10^6) and faster for smaller list. Sorting (Timsort) takes between O(n) to O(n log n) operations
-    # depending upon the arrangement of the input list while finding max pair requires two complete traversals of the list 
-    # invariably i.e. O(2 n). None the less linear time complexity should in theory perform better than logrithmic time complexity,
-    # the contradiction in results may be attributed to the optimizations applied in sort().
-
+    
     
 

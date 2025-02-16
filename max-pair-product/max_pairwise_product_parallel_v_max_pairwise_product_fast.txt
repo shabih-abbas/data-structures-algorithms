@@ -1,0 +1,18 @@
+
+max_pairwise_product_parallel vs max_pairwise_product_fast
+
+lower input bound: 0
+upper input bound: 10000.0
+no. of tests: 200
+
+max_pairwise_product_parallel avg: 0.003726 sec
+max_pairwise_product_fast avg: 0.004952 sec
+
+max_pairwise_product_parallel lower bound input: 0.006455 sec
+max_pairwise_product_fast lower bound input: 0.009187 sec
+
+max_pairwise_product_parallel upper bound input: 0.007502 sec
+max_pairwise_product_fast upper bound input: 0.010443 sec
+
+max_pairwise_product_parallel was faster 200 times out of 200
+max_pairwise_product_fast was faster 0 times out of 200

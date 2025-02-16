@@ -59,7 +59,7 @@ if __name__=="__main__" :
     parser.add_argument("--upper", type=float, required=True, help="Upper bound for random inputs")
     parser.add_argument("--count", type=int, default=1, help="Number of random inputs to generate (default: 1)")
     parser.add_argument("--reps", type=int, default=1, help="Number of times to call the function (default: 1)")
-    parser.add_argument("--type", choices=["int", "float"], default="int", help="Data type for generated numbers (default: int)")
+    parser.add_argument("--type", choices=["int", "float", "list(int)", "list(float)"], default="int", help="Data type for generated numbers (default: int)")
     args= parser.parse_args()
     dir_path= os.path.dirname(args.file)
     log_file_path= os.path.join(dir_path, f"{args.func1}_v_{args.func2}.txt")

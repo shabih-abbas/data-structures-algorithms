@@ -1,0 +1,15 @@
+
+=== 2025-02-16 12:36:31 ===
+function: max_pairwise_product_parallel
+input lower-bound: 0
+input upper-bound: 100000.0
+input type: list(int)
+length of input: 100000
+
+No. of tests: 50
+Avg. Runtime: 0.003447 sec
+Min Runtime: 0.000074 sec
+Max Runtime: 0.007752 sec
+Lower Bound Runtime: 0.006469 sec 
+Upper Bound Runtime: 0.006897 sec 
+==================================================

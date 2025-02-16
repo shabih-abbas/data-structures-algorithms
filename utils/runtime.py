@@ -14,7 +14,7 @@ parser.add_argument("--lower", type=float, default=0, help="Lower bound for rand
 parser.add_argument("--upper", type=float, required=True, help="Upper bound for random inputs")
 parser.add_argument("--count", type=int, default=1, help="Number of random inputs to generate (default: 1)")
 parser.add_argument("--reps", type=int, default=1, help="Number of times to call the function (default: 1)")
-parser.add_argument("--type", choices=["int", "float"], default="int", help="Data type for generated numbers (default: int)")
+parser.add_argument("--type", choices=["int", "float", "list(int)", "list(float)"], default="int", help="Data type for generated numbers (default: int)")
 
 # Parse command-line arguments
 args = parser.parse_args()
@@ -42,16 +42,10 @@ try:
 
         runtime = end_time - start_time
         runtimes.append(runtime)
-
-        print(f"{args.func}({', '.join(map(str, inputs))}) = {result} | Runtime: {runtime:.6f} sec")
-
     
-    if(args.type=="int"):
-        lower_bound_inputs = [int(args.lower)] * args.count
-        upper_bound_inputs = [int(args.upper)] * args.count
-    else:
-        lower_bound_inputs = [args.lower] * args.count
-        upper_bound_inputs = [args.upper] * args.count
+    
+    lower_bound_inputs = generate_boundary_inputs(args.lower, args.count, args.type)
+    upper_bound_inputs = generate_boundary_inputs(args.upper, args.count, args.type)
     
     start_time = time.time()
     function(*lower_bound_inputs)
@@ -72,12 +66,14 @@ try:
         log_file.write(f"function: {args.func}\n")
         log_file.write(f"input lower-bound: {args.lower}\n")
         log_file.write(f"input upper-bound: {args.upper}\n")
+        log_file.write(f"input type: {args.type}\n")
+        log_file.write(f"length of input: {args.count}\n\n")
         log_file.write(f"No. of tests: {args.reps}\n")
         log_file.write(f"Avg. Runtime: {avg_runtime:.6f} sec\n")
         log_file.write(f"Min Runtime: {min_runtime:.6f} sec\n")
         log_file.write(f"Max Runtime: {max_runtime:.6f} sec\n")
-        log_file.write(f"Lower Bound Runtime: {lower_runtime:.6f} sec (Inputs: {lower_bound_inputs})\n")
-        log_file.write(f"Upper Bound Runtime: {upper_runtime:.6f} sec (Inputs: {upper_bound_inputs})\n")
+        log_file.write(f"Lower Bound Runtime: {lower_runtime:.6f} sec \n")
+        log_file.write(f"Upper Bound Runtime: {upper_runtime:.6f} sec \n")
         log_file.write("=" * 50 + "\n")
 
     print(f"\n✅ Results logged to: {log_file_path}")

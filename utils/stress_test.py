@@ -39,7 +39,7 @@ if __name__ == "__main__":
     parser.add_argument("--lower", type=float, default=0, help="Lower bound of input range.")
     parser.add_argument("--upper", type=float, required=True, help="Upper bound of input range.")
     parser.add_argument("--count", type=int, default=1, help="Number of inputs per function call.")
-    parser.add_argument("--type", choices=["int", "float"], default="int", help="Type of input values.")
+    parser.add_argument("--type", choices=["int", "float", "list(int)", "list(float)"], default="int", help="Type of input values.")
     parser.add_argument("--max_time", type=int, default=1, help="Maximum runtime in seconds.")
 
     args = parser.parse_args()

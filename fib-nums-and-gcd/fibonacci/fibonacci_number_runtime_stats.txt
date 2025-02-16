@@ -1,0 +1,13 @@
+
+
+=== 2025-02-16 10:22:46 ===
+function: fibonacci_number
+input lower-bound: 0
+input upper-bound: 35.0
+No. of tests: 10
+Avg. Runtime: 0.137545 sec
+Min Runtime: 0.000001 sec
+Max Runtime: 0.805993 sec
+Lower Bound Runtime: 0.000001 sec (Inputs: [0])
+Upper Bound Runtime: 1.330347 sec (Inputs: [35])
+==================================================
