@@ -1,0 +1,18 @@
+
+fibonacci_last_digit_fast vs fibonacci_last_digit
+
+lower input bound: 0
+upper input bound: 99999.0
+no. of tests: 50
+
+fibonacci_last_digit_fast avg: 0.002548 sec
+fibonacci_last_digit avg: 0.029769 sec
+
+fibonacci_last_digit_fast lower bound input: 0.000002 sec
+fibonacci_last_digit lower bound input: 0.000001 sec
+
+fibonacci_last_digit_fast upper bound input: 0.004714 sec
+fibonacci_last_digit upper bound input: 0.082596 sec
+
+fibonacci_last_digit_fast was faster 50 times out of 50
+fibonacci_last_digit was faster 0 times out of 50

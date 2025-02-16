@@ -1,0 +1,15 @@
+
+=== 2025-02-16 13:35:27 ===
+function: fibonacci_last_digit_fast
+input lower-bound: 0
+input upper-bound: 1000000.0
+input type: int
+length of input: 1
+
+No. of tests: 50
+Avg. Runtime: 0.027510 sec
+Min Runtime: 0.000138 sec
+Max Runtime: 0.058392 sec
+Lower Bound Runtime: 0.000001 sec 
+Upper Bound Runtime: 0.051369 sec 
+==================================================
