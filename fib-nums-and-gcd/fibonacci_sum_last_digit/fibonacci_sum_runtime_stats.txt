@@ -1,0 +1,15 @@
+
+=== 2025-02-17 05:58:36 ===
+function: fibonacci_sum
+input lower-bound: 0
+input upper-bound: 99999.0
+input type: int
+length of input: 1
+
+No. of tests: 50
+Avg. Runtime: 0.056935 sec
+Min Runtime: 0.000036 sec
+Max Runtime: 0.168062 sec
+Lower Bound Runtime: 0.000002 sec 
+Upper Bound Runtime: 0.164654 sec 
+==================================================

@@ -22,8 +22,8 @@ def fibonacci_huge_fast(n, m):
     return current
 
 def fibonacci_huge_faster(n, m):
-    if n <= 1:
-        return n
+    if n <= 1: return n
+    
     nums=[0,1]
     cycle  =  0
     
@@ -38,6 +38,6 @@ def fibonacci_huge_faster(n, m):
 
 
 if __name__ == '__main__':
-    # n, m = map(int, input().split())
-    # print(fibonacci_huge_naive(n, m))
-    print(fibonacci_huge_faster(6,6))
+    n, m = map(int, input().split())
+    print(fibonacci_huge_faster(n, m))
+    

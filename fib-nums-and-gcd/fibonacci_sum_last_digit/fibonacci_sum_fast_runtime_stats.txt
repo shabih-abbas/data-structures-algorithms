@@ -1,0 +1,45 @@
+
+=== 2025-02-17 05:56:36 ===
+function: fibonacci_sum_fast
+input lower-bound: 0
+input upper-bound: 99999.0
+input type: int
+length of input: 1
+
+No. of tests: 50
+Avg. Runtime: 0.004090 sec
+Min Runtime: 0.000243 sec
+Max Runtime: 0.011998 sec
+Lower Bound Runtime: 0.000001 sec 
+Upper Bound Runtime: 0.007026 sec 
+==================================================
+
+=== 2025-02-17 05:56:53 ===
+function: fibonacci_sum_fast
+input lower-bound: 0
+input upper-bound: 999999.0
+input type: int
+length of input: 1
+
+No. of tests: 50
+Avg. Runtime: 0.036173 sec
+Min Runtime: 0.006287 sec
+Max Runtime: 0.071813 sec
+Lower Bound Runtime: 0.000002 sec 
+Upper Bound Runtime: 0.062967 sec 
+==================================================
+
+=== 2025-02-17 05:57:21 ===
+function: fibonacci_sum_fast
+input lower-bound: 0
+input upper-bound: 9999999.0
+input type: int
+length of input: 1
+
+No. of tests: 50
+Avg. Runtime: 0.345006 sec
+Min Runtime: 0.003927 sec
+Max Runtime: 0.680588 sec
+Lower Bound Runtime: 0.000002 sec 
+Upper Bound Runtime: 0.684438 sec 
+==================================================

@@ -16,3 +16,21 @@ fibonacci_huge_faster upper bound input: 0.000871 sec
 
 fibonacci_huge_fast was faster 47 times out of 50
 fibonacci_huge_faster was faster 3 times out of 50
+
+fibonacci_huge_fast vs fibonacci_huge_faster
+
+lower input bound: 0
+upper input bound: 99999.0
+no. of tests: 50
+
+fibonacci_huge_fast avg: 0.003880 sec
+fibonacci_huge_faster avg: 0.819712 sec
+
+fibonacci_huge_fast lower bound input: 0.000001 sec
+fibonacci_huge_faster lower bound input: 0.000001 sec
+
+fibonacci_huge_fast upper bound input: 0.007032 sec
+fibonacci_huge_faster upper bound input: 0.003013 sec
+
+fibonacci_huge_fast was faster 45 times out of 50
+fibonacci_huge_faster was faster 5 times out of 50

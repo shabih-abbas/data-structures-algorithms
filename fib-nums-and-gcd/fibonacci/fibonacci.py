@@ -1,6 +1,4 @@
-import random
-import time
-import timeit
+
 def fibonacci_number(n):
     if n <= 1:
         return n

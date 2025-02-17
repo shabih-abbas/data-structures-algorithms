@@ -1,0 +1,18 @@
+
+fibonacci_sum_fast vs fibonacci_sum_faster
+
+lower input bound: 0
+upper input bound: 9999999.0
+no. of tests: 50
+
+fibonacci_sum_fast avg: 0.354433 sec
+fibonacci_sum_faster avg: 0.000072 sec
+
+fibonacci_sum_fast lower bound input: 0.000001 sec
+fibonacci_sum_faster lower bound input: 0.000006 sec
+
+fibonacci_sum_fast upper bound input: 0.640615 sec
+fibonacci_sum_faster upper bound input: 0.000062 sec
+
+fibonacci_sum_fast was faster 0 times out of 50
+fibonacci_sum_faster was faster 50 times out of 50
