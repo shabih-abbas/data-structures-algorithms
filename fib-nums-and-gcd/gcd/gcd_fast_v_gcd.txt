@@ -1,0 +1,18 @@
+
+gcd_fast vs gcd
+
+lower input bound: 1.0
+upper input bound: 2000000.0
+no. of tests: 50
+
+gcd_fast avg: 0.000006 sec
+gcd avg: 0.036391 sec
+
+gcd_fast lower bound input: 0.000003 sec
+gcd lower bound input: 0.000001 sec
+
+gcd_fast upper bound input: 0.000001 sec
+gcd upper bound input: 0.132269 sec
+
+gcd_fast was faster 50 times out of 50
+gcd was faster 0 times out of 50
