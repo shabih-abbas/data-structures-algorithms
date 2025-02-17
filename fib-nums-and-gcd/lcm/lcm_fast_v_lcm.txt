@@ -1,0 +1,36 @@
+
+lcm_fast vs lcm
+
+lower input bound: 1.0
+upper input bound: 1000.0
+no. of tests: 50
+
+lcm_fast avg: 0.000004 sec
+lcm avg: 0.009906 sec
+
+lcm_fast lower bound input: 0.000004 sec
+lcm lower bound input: 0.000001 sec
+
+lcm_fast upper bound input: 0.000001 sec
+lcm upper bound input: 0.000053 sec
+
+lcm_fast was faster 50 times out of 50
+lcm was faster 0 times out of 50
+
+lcm_fast vs lcm
+
+lower input bound: 1.0
+upper input bound: 10000.0
+no. of tests: 50
+
+lcm_fast avg: 0.000009 sec
+lcm avg: 0.941947 sec
+
+lcm_fast lower bound input: 0.000009 sec
+lcm lower bound input: 0.000001 sec
+
+lcm_fast upper bound input: 0.000002 sec
+lcm upper bound input: 0.000571 sec
+
+lcm_fast was faster 50 times out of 50
+lcm was faster 0 times out of 50

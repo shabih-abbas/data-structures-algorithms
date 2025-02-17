@@ -1,0 +1,15 @@
+
+=== 2025-02-17 15:31:28 ===
+function: lcm_fast
+input lower-bound: 1.0
+input upper-bound: 1000000000.0
+input type: int
+length of input: 2
+
+No. of tests: 50
+Avg. Runtime: 0.000002 sec
+Min Runtime: 0.000002 sec
+Max Runtime: 0.000008 sec
+Lower Bound Runtime: 0.000003 sec 
+Upper Bound Runtime: 0.000003 sec 
+==================================================
