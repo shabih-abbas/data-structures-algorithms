@@ -1,0 +1,18 @@
+
+fibonacci_partial_sum_naive vs fibonacci_partial_sum_fast
+
+lower input bound: 0
+upper input bound: 100000.0
+no. of tests: 50
+
+fibonacci_partial_sum_naive avg: 0.063501 sec
+fibonacci_partial_sum_fast avg: 0.000120 sec
+
+fibonacci_partial_sum_naive lower bound input: 0.000004 sec
+fibonacci_partial_sum_fast lower bound input: 0.000015 sec
+
+fibonacci_partial_sum_naive upper bound input: 0.089426 sec
+fibonacci_partial_sum_fast upper bound input: 0.000102 sec
+
+fibonacci_partial_sum_naive was faster 0 times out of 50
+fibonacci_partial_sum_fast was faster 50 times out of 50

@@ -1,0 +1,30 @@
+
+=== 2025-02-17 16:06:59 ===
+function: fibonacci_partial_sum_fast
+input lower-bound: 0
+input upper-bound: 10000000000.0
+input type: int
+length of input: 2
+
+No. of tests: 50
+Avg. Runtime: 0.000141 sec
+Min Runtime: 0.000093 sec
+Max Runtime: 0.000233 sec
+Lower Bound Runtime: 0.000002 sec 
+Upper Bound Runtime: 0.000083 sec 
+==================================================
+
+=== 2025-02-17 16:07:30 ===
+function: fibonacci_partial_sum_fast
+input lower-bound: 0
+input upper-bound: 10000000000000.0
+input type: int
+length of input: 2
+
+No. of tests: 50
+Avg. Runtime: 0.000122 sec
+Min Runtime: 0.000074 sec
+Max Runtime: 0.000151 sec
+Lower Bound Runtime: 0.000003 sec 
+Upper Bound Runtime: 0.000134 sec 
+==================================================

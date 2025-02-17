@@ -1,7 +1,14 @@
-import sys
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
-from gcd.gcd import gcd_fast
+# import sys
+# import os
+# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
+# from gcd.gcd import gcd_fast
+def gcd_fast(a,b):
+    d= max(a,b)
+    r= min(a,b)
+    while(d % r != 0):
+        d, r = r, d % r
+    return r
+
 def lcm(a, b):
     for l in range(1, a * b + 1):
         if l % a == 0 and l % b == 0:
