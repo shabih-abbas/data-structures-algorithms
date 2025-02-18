@@ -1,13 +1,11 @@
-# import sys
-# import os
-# sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
-# from gcd.gcd import gcd_fast
-def gcd_fast(a,b):
-    d= max(a,b)
-    r= min(a,b)
-    while(d % r != 0):
-        d, r = r, d % r
-    return r
+# Input: Two positive integers a and b
+# Output: The least common multiple of a and b
+# Constraints: 1 ≤ a,b ≤ 10^7; time limit: 5sec; memory limit: 512MB
+
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
+from gcd.gcd import gcd_fast
 
 def lcm(a, b):
     for l in range(1, a * b + 1):
@@ -19,7 +17,7 @@ def lcm_fast(a, b):
     return int(a * b / gcd_fast(a, b))
 
 if __name__ == '__main__':
-    # a, b = map(int, input().split())
-    # print(lcm(a, b))
-    print(lcm_fast(761457,614573))
+    a, b = map(int, input().split())
+    print(lcm_fast(a, b))
+    
     

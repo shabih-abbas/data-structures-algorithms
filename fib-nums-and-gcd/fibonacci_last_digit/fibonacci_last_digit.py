@@ -1,3 +1,7 @@
+# Input: An integer n.
+# Output: The last digit of the n-th Fibonacci number.
+# Constraints: 0 ≤ n ≤ 10^6; time limit: 5sec; memory limit: 5MB
+
 def fibonacci_last_digit(n):
     if n <= 1:
         return n

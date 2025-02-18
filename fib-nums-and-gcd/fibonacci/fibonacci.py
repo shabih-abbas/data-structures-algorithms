@@ -1,3 +1,6 @@
+# Input: An integer n.
+# Output: n-th Fibonacci number.
+# Constraints: 0 ≤ n ≤ 45; time limit: 5 sec; memory limit: 512MB
 
 def fibonacci_number(n):
     if n <= 1:

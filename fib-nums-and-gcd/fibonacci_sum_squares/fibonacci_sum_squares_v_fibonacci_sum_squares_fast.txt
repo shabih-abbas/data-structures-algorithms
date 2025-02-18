@@ -1,0 +1,18 @@
+
+fibonacci_sum_squares vs fibonacci_sum_squares_fast
+
+lower input bound: 0
+upper input bound: 10000.0
+no. of tests: 50
+
+fibonacci_sum_squares avg: 0.027543 sec
+fibonacci_sum_squares_fast avg: 0.000089 sec
+
+fibonacci_sum_squares lower bound input: 0.000001 sec
+fibonacci_sum_squares_fast lower bound input: 0.000005 sec
+
+fibonacci_sum_squares upper bound input: 0.089432 sec
+fibonacci_sum_squares_fast upper bound input: 0.000101 sec
+
+fibonacci_sum_squares was faster 1 times out of 50
+fibonacci_sum_squares_fast was faster 49 times out of 50

@@ -1,20 +1,11 @@
-# import sys
-# sys.path.append("../fibonacci_huge")
-# from fibonacci_huge import fibonacci_huge_faster as fibonacci_modulo
-def fibonacci_modulo(n, m):
-    if n <= 1:
-        return n
-    nums=[0,1]
-    cycle  =  0
-    
-    for i in range(2,n + 1):
-        nums.append((nums[i-1]+nums[i-2]) % m)
-        if len(nums)%2==0 and nums[:len(nums)//2]==nums[len(nums)//2:]:
-            cycle = len(nums)//2
-            break
-    if cycle > 0: return nums[n % cycle]
-    
-    return nums[n]
+# Input: An integer n.
+# Output: The last digit of F0 + F1 +··· + Fn
+# Constraints. 0 ≤ n ≤ 10^14; time-limit: 5sec; memory limit: 512MB
+
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__),"../")))
+from fibonacci_huge.fibonacci_huge import fibonacci_huge_faster as fibonacci_modulo
 
 def fibonacci_sum(n):
     if n <= 1:

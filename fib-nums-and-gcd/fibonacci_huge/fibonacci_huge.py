@@ -1,3 +1,7 @@
+# Input: Integers n and m.
+# Output: n-th Fibonacci number modulo m.
+# Constraints: 1 ≤ n ≤ 10^14, 2 ≤ m ≤ 10^3; time limit: 5sec; memory limit: 512MB
+
 def fibonacci_huge_naive(n, m):
     if n <= 1:
         return n

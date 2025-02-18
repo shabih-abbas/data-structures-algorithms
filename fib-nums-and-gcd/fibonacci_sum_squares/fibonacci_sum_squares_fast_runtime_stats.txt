@@ -1,0 +1,15 @@
+
+=== 2025-02-18 04:50:22 ===
+function: fibonacci_sum_squares_fast
+input lower-bound: 0
+input upper-bound: 100000000000000.0
+input type: int
+length of input: 1
+
+No. of tests: 50
+Avg. Runtime: 0.000093 sec
+Min Runtime: 0.000079 sec
+Max Runtime: 0.000142 sec
+Lower Bound Runtime: 0.000000 sec 
+Upper Bound Runtime: 0.000081 sec 
+==================================================
