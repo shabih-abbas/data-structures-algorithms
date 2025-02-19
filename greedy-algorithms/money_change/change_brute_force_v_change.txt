@@ -1,0 +1,18 @@
+
+change_brute_force vs change
+
+lower input bound: 1.0
+upper input bound: 50.0
+no. of tests: 10
+
+change_brute_force avg: 0.830698 sec
+change avg: 0.000002 sec
+
+change_brute_force lower bound input: 0.000003 sec
+change lower bound input: 0.000003 sec
+
+change_brute_force upper bound input: 6.660411 sec
+change upper bound input: 0.000001 sec
+
+change_brute_force was faster 0 times out of 10
+change was faster 10 times out of 10
