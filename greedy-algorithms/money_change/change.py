@@ -20,4 +20,4 @@ def change(money):
 
 if __name__ == '__main__':
     m = int(input())
-    print(change_brute_force(m))
+    print(change(m))
