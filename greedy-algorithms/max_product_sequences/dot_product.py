@@ -12,7 +12,7 @@ def max_dot_product(first_sequence, second_sequence):
 def max_dot_product_fast(first_sequence, second_sequence):
     first_sequence.sort()
     second_sequence.sort()
-    return sum([first_sequence[i] * second_sequence[i] for i in range(len(first_sequence))])
+    return sum(list(map(lambda x: x[0] * x[1], zip(first_sequence,second_sequence))))
 
 
 if __name__ == '__main__':
