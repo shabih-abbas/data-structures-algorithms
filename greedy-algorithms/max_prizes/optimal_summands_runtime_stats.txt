@@ -1,0 +1,15 @@
+
+=== 2025-02-20 09:49:09 ===
+function: optimal_summands
+input lower-bound: 0
+input upper-bound: 1000000000.0
+input type: int
+length of input: 1
+
+No. of tests: 50
+Avg. Runtime: 0.002135 sec
+Min Runtime: 0.000511 sec
+Max Runtime: 0.004045 sec
+Lower Bound Runtime: 0.000001 sec 
+Upper Bound Runtime: 0.003260 sec 
+==================================================
