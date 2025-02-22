@@ -1,7 +1,12 @@
 from itertools import permutations
-
-
+LARGEST_LEN = 4
+def comparison(x):
+    len_x = len(x)
+    chars_to_add = LARGEST_LEN - len_x 
+    for i in range(chars_to_add): x+= x[i % len_x]
+    return int(x)
 def largest_number_naive(numbers):
+    if not numbers: return 0
     numbers = list(map(str, numbers))
 
     largest = 0
@@ -11,8 +16,9 @@ def largest_number_naive(numbers):
 
     return largest
 def largest_number_fast(numbers):
+    if not numbers: return 0
     numbers = list(map(str, numbers))
-    numbers.sort(key= lambda x : int(x)/10**(len(x)-1),reverse=True)
+    numbers.sort(key= comparison, reverse=True)
     return int("".join(numbers))
 
 

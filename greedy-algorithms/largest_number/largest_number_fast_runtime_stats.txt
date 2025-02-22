@@ -1,0 +1,30 @@
+
+=== 2025-02-22 06:08:36 ===
+function: largest_number_fast
+input lower-bound: 1.0
+input upper-bound: 1000.0
+input type: list(int)
+length of input: 100
+
+No. of tests: 50
+Avg. Runtime: 0.000048 sec
+Min Runtime: 0.000005 sec
+Max Runtime: 0.000122 sec
+Lower Bound Runtime: 0.000042 sec 
+Upper Bound Runtime: 0.000055 sec 
+==================================================
+
+=== 2025-02-22 07:22:13 ===
+function: largest_number_fast
+input lower-bound: 1.0
+input upper-bound: 1000.0
+input type: list(int)
+length of input: 100
+
+No. of tests: 50
+Avg. Runtime: 0.000033 sec
+Min Runtime: 0.000002 sec
+Max Runtime: 0.000064 sec
+Lower Bound Runtime: 0.000077 sec 
+Upper Bound Runtime: 0.000044 sec 
+==================================================
