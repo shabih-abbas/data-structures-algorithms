@@ -1,3 +1,8 @@
+# Input: A sequence of positive integers.
+# Output: The largest integer that can be obtained by concatenating
+# the given integers in some order.
+# Constraints. 1 ≤ n ≤ 100; 1 ≤ ai ≤ 10^3 for all 1 ≤ i ≤ n.
+
 from itertools import permutations
 LARGEST_LEN = 4
 def comparison(x):

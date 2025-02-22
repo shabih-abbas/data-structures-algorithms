@@ -1,3 +1,7 @@
+# Input: An integer money.
+# Output: The minimum number of coins with denominations 1, 5, and 10 that changes money.
+# Constraints. 1 ≤ money ≤ 10^3
+
 def change_brute_force(money):
     coins=[1,5,10]
     if money == 0:

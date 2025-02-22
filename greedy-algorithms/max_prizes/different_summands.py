@@ -1,3 +1,7 @@
+# Input: A positive integer n.
+# Output: The maximum k such that n can be represented as the
+# sum a1 + ··· + ak of k distinct positive integers.
+# Constraints. 1 ≤ n ≤ 10^9
 
 def optimal_summands(n):
     summands = []

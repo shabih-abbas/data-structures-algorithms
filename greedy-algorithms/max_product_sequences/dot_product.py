@@ -1,5 +1,9 @@
-from itertools import permutations
+# Input: Two sequences of n positive integers: price1,..., pricen and clicks1,..., clicksn.
+# Output: The maximum value of price1 · c1 + ··· + pricen · cn, where c1,...,cn is a permutation
+# of clicks1,..., clicksn.
+# Constraints. 1 ≤ n ≤ 10^3; 0 ≤ pricei, clicksi ≤ 10^5 for all 1 ≤ i ≤ n.
 
+from itertools import permutations
 
 def max_dot_product(first_sequence, second_sequence):
     max_product = 0
