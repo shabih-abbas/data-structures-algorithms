@@ -1,0 +1,18 @@
+
+majority_element_sort vs majority_element_naive
+
+lower input bound: 1.0
+upper input bound: 1000000000.0
+no. of tests: 25
+
+majority_element_sort avg: 0.000027 sec
+majority_element_naive avg: 0.001195 sec
+
+majority_element_sort lower bound input: 0.000011 sec
+majority_element_naive lower bound input: 0.000002 sec
+
+majority_element_sort upper bound input: 0.000010 sec
+majority_element_naive upper bound input: 0.000009 sec
+
+majority_element_sort was faster 25 times out of 25
+majority_element_naive was faster 0 times out of 25

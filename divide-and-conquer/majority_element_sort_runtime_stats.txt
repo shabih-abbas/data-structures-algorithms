@@ -1,0 +1,15 @@
+
+=== 2025-03-04 05:47:17 ===
+function: majority_element_sort
+input lower-bound: 1.0
+input upper-bound: 1000000000.0
+input type: list(int)
+length of input: 100000
+
+No. of tests: 50
+Avg. Runtime: 0.007016 sec
+Min Runtime: 0.000077 sec
+Max Runtime: 0.021299 sec
+Lower Bound Runtime: 0.000619 sec 
+Upper Bound Runtime: 0.000901 sec 
+==================================================

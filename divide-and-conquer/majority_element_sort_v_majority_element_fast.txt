@@ -1,0 +1,18 @@
+
+majority_element_sort vs majority_element_fast
+
+lower input bound: 1.0
+upper input bound: 1000000000.0
+no. of tests: 10
+
+majority_element_sort avg: 0.004703 sec
+majority_element_fast avg: 0.006282 sec
+
+majority_element_sort lower bound input: 0.000608 sec
+majority_element_fast lower bound input: 0.009031 sec
+
+majority_element_sort upper bound input: 0.000650 sec
+majority_element_fast upper bound input: 0.010872 sec
+
+majority_element_sort was faster 10 times out of 10
+majority_element_fast was faster 0 times out of 10
