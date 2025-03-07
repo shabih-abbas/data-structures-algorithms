@@ -2,8 +2,16 @@ from random import randint
 
 
 def partition3(array, left, right):
-    # write your code here
-
+    m1 = left
+    m2 = left
+    for i in range(left + 1, right + 1):
+        if array[i]<= array[m2]:
+            m2 += 1
+            array[i], array[m2] = array[m2], array[i]
+        if array[m2]< array[m1]:
+            array[m2], array[m1] = array[m1], array[m2]
+            m1 += 1
+    return m1, m2
 
 def randomized_quick_sort(array, left, right):
     if left >= right:

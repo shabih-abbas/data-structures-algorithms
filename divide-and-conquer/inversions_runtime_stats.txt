@@ -1,0 +1,15 @@
+
+=== 2025-03-07 05:55:17 ===
+function: inversions
+input lower-bound: 0
+input upper-bound: 100000000.0
+input type: list(int)
+length of input: 30000
+
+No. of tests: 50
+Avg. Runtime: 0.040527 sec
+Min Runtime: 0.001066 sec
+Max Runtime: 0.115819 sec
+Lower Bound Runtime: 0.052796 sec 
+Upper Bound Runtime: 0.048478 sec 
+==================================================
