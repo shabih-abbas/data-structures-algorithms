@@ -1,0 +1,15 @@
+
+=== 2025-03-19 07:43:55 ===
+function: compute_operations_d
+input lower-bound: 0
+input upper-bound: 1000000.0
+input type: int
+length of input: 1
+
+No. of tests: 50
+Avg. Runtime: 0.162685 sec
+Min Runtime: 0.000226 sec
+Max Runtime: 0.373253 sec
+Lower Bound Runtime: 0.000005 sec 
+Upper Bound Runtime: 0.303986 sec 
+==================================================
