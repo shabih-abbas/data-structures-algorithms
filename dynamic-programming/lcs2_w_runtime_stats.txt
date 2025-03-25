@@ -1,0 +1,15 @@
+
+=== 2025-03-25 06:40:46 ===
+function: lcs2_w
+input lower-bound: 1.0
+input upper-bound: 50.0
+input type: list(int)
+length of input: 100
+
+No. of tests: 50
+Avg. Runtime: 0.000175 sec
+Min Runtime: 0.000001 sec
+Max Runtime: 0.000567 sec
+Lower Bound Runtime: 0.000580 sec 
+Upper Bound Runtime: 0.000583 sec 
+==================================================

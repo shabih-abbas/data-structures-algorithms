@@ -15,16 +15,26 @@ def lcs2_brute_w(array):
     return lcs2_brute(array[:len(array)//2], array[len(array)//2:])
 
 def lcs2(first_sequence, second_sequence):
+    if not(first_sequence and second_sequence): return 0
     n = len(first_sequence)
     m = len(second_sequence)
-    seq= [[0]* (n + 1)]* (m + 1)
+    seq= [0]* (n + 1)
+    # print(seq)
     for i in range(1, m + 1):
+        cur = [0]
         for j in range(1, n + 1):
-            u = seq[i-1][j]
-            l = seq[i][j-1]
-            if first_sequence[j - 1] == second_sequence[i - 1] and u == l: seq[i][j]= u + 1
-            else: seq[i][j] = max(u, l)
-    return seq[m][n]
+            u = seq[j]
+            l = cur[j - 1]
+            ul = seq[j - 1]
+            if first_sequence[j - 1] == second_sequence[i - 1] and u == l and u == ul: 
+                cur.append(u + 1)
+                # print(first_sequence[j - 1], j, second_sequence[i - 1], i, seq[i][j])
+            else: 
+                cur.append(max(u, l))
+                # print(first_sequence[j - 1], j, second_sequence[i - 1], i, seq[i][j])
+        seq = cur[:]
+        # print(seq)
+    return seq[n]
 def lcs2_w(array):
     if len(array) < 2: return 0
     return lcs2(array[:len(array)//2], array[len(array)//2:])
