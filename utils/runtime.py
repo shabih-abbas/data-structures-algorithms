@@ -82,5 +82,5 @@ except ModuleNotFoundError:
     print(f"Error: Module '{file_name}' not found in '{dir_path}'")
 except AttributeError:
     print(f"Error: Function '{args.func}' not found in '{file_name}'")
-except TypeError as e:
-    print(f"Error: {e}")
+# except TypeError as e:
+#     print(f"Error: {e}")

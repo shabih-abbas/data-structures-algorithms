@@ -28,6 +28,7 @@ def lcs2(first_sequence, second_sequence):
             ul = seq[j - 1]
             if first_sequence[j - 1] == second_sequence[i - 1] and u == l and u == ul: 
                 cur.append(u + 1)
+                if cur[j] == n or cur[j] == m: return cur[j] # helps in find_seq
                 # print(first_sequence[j - 1], j, second_sequence[i - 1], i, seq[i][j])
             else: 
                 cur.append(max(u, l))

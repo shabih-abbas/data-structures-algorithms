@@ -1,0 +1,75 @@
+
+=== 2025-03-26 05:49:58 ===
+function: lcs3_w
+input lower-bound: -1000000000.0
+input upper-bound: 1000000000.0
+input type: list(int)
+length of input: 100
+
+No. of tests: 5
+Avg. Runtime: 0.000144 sec
+Min Runtime: 0.000017 sec
+Max Runtime: 0.000311 sec
+Lower Bound Runtime: 0.001280 sec 
+Upper Bound Runtime: 0.001219 sec 
+==================================================
+
+=== 2025-03-26 05:51:39 ===
+function: lcs3_w
+input lower-bound: -1000000000.0
+input upper-bound: 1000000000.0
+input type: list(int)
+length of input: 100
+
+No. of tests: 50
+Avg. Runtime: 0.000122 sec
+Min Runtime: 0.000000 sec
+Max Runtime: 0.000315 sec
+Lower Bound Runtime: 0.001343 sec 
+Upper Bound Runtime: 0.001275 sec 
+==================================================
+
+=== 2025-03-26 05:52:04 ===
+function: lcs3_w
+input lower-bound: -50.0
+input upper-bound: 50.0
+input type: list(int)
+length of input: 100
+
+No. of tests: 50
+Avg. Runtime: 0.000218 sec
+Min Runtime: 0.000000 sec
+Max Runtime: 0.001157 sec
+Lower Bound Runtime: 0.001234 sec 
+Upper Bound Runtime: 0.001210 sec 
+==================================================
+
+=== 2025-03-27 03:27:16 ===
+function: lcs3_w
+input lower-bound: -50.0
+input upper-bound: 50.0
+input type: list(int)
+length of input: 100
+
+No. of tests: 50
+Avg. Runtime: 0.000337 sec
+Min Runtime: 0.000000 sec
+Max Runtime: 0.002254 sec
+Lower Bound Runtime: 0.045532 sec 
+Upper Bound Runtime: 0.047023 sec 
+==================================================
+
+=== 2025-04-03 07:19:30 ===
+function: lcs3_w
+input lower-bound: -150.0
+input upper-bound: 150.0
+input type: list(int)
+length of input: 300
+
+No. of tests: 20
+Avg. Runtime: 0.003900 sec
+Min Runtime: 0.000001 sec
+Max Runtime: 0.046820 sec
+Lower Bound Runtime: 0.005584 sec 
+Upper Bound Runtime: 0.005345 sec 
+==================================================

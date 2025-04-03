@@ -13,3 +13,18 @@ Max Runtime: 0.000567 sec
 Lower Bound Runtime: 0.000580 sec 
 Upper Bound Runtime: 0.000583 sec 
 ==================================================
+
+=== 2025-04-03 07:21:13 ===
+function: lcs2_w
+input lower-bound: -100.0
+input upper-bound: 100.0
+input type: list(int)
+length of input: 200
+
+No. of tests: 20
+Avg. Runtime: 0.000699 sec
+Min Runtime: 0.000002 sec
+Max Runtime: 0.002111 sec
+Lower Bound Runtime: 0.002253 sec 
+Upper Bound Runtime: 0.002245 sec 
+==================================================
