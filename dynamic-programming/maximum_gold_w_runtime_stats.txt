@@ -1,0 +1,75 @@
+
+=== 2025-04-07 06:21:19 ===
+function: maximum_gold_w
+input lower-bound: 0.0
+input upper-bound: 10000.0
+input type: list(int)
+length of input: 300
+
+No. of tests: 20
+Avg. Runtime: 0.000002 sec
+Min Runtime: 0.000000 sec
+Max Runtime: 0.000004 sec
+Lower Bound Runtime: 0.000001 sec 
+Upper Bound Runtime: 0.000000 sec 
+==================================================
+
+=== 2025-04-07 06:27:16 ===
+function: maximum_gold_w
+input lower-bound: 0.0
+input upper-bound: 10000.0
+input type: list(int)
+length of input: 300
+
+No. of tests: 20
+Avg. Runtime: 0.000016 sec
+Min Runtime: 0.000005 sec
+Max Runtime: 0.000028 sec
+Lower Bound Runtime: 0.000019 sec 
+Upper Bound Runtime: 0.000012 sec 
+==================================================
+
+=== 2025-04-08 05:03:31 ===
+function: maximum_gold_w
+input lower-bound: 0
+input upper-bound: 100000.0
+input type: list(int)
+length of input: 300
+
+No. of tests: 20
+Avg. Runtime: 0.013538 sec
+Min Runtime: 0.000009 sec
+Max Runtime: 0.253303 sec
+Lower Bound Runtime: 0.000051 sec 
+Upper Bound Runtime: 0.000023 sec 
+==================================================
+
+=== 2025-04-08 05:40:01 ===
+function: maximum_gold_w
+input lower-bound: 0
+input upper-bound: 100000.0
+input type: list(int)
+length of input: 300
+
+No. of tests: 50
+Avg. Runtime: 0.052381 sec
+Min Runtime: 0.000005 sec
+Max Runtime: 0.757056 sec
+Lower Bound Runtime: 0.000508 sec 
+Upper Bound Runtime: 0.000217 sec 
+==================================================
+
+=== 2025-04-08 05:51:14 ===
+function: maximum_gold_w
+input lower-bound: 0
+input upper-bound: 100000.0
+input type: list(int)
+length of input: 300
+
+No. of tests: 50
+Avg. Runtime: 0.023999 sec
+Min Runtime: 0.000003 sec
+Max Runtime: 0.197188 sec
+Lower Bound Runtime: 0.000499 sec 
+Upper Bound Runtime: 0.000294 sec 
+==================================================

@@ -94,7 +94,7 @@ def lcs3(first_sequence, second_sequence, third_sequence, fast= True):
     if not seq[s_len][f_len]: return 0
     
     f_seq_s= find_seq2(first_sequence, second_sequence, seq) if fast else find_seq(first_sequence, second_sequence, seq)
-    # print(f_seq_s)
+    print(f_seq_s)
     for s in f_seq_s:
         if lcs >= len(s): return lcs
         lcs = max(lcs, lcs2(s, third_sequence))
