@@ -32,7 +32,7 @@ def maximum_value(dataset):
                 d = evaluate(min_sol[i][k], max_sol[k + 1][j], operators[k])
                 max_sol[i][j] = max(max_sol[i][j], a, b, c, d)
                 min_sol[i][j] = min(min_sol[i][j], a, b, c, d)
-    print(max_sol)
+    # print(max_sol)
     return max_sol[0][-1]
 
 
